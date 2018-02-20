@@ -7,6 +7,7 @@
     
     <div class="{{ .Params.wrapper | default "wrapper" }}">
       
+        {{ if .Params.background }}
         <div class="page-header {{ .Params.headerstyle | default "page-header-small"}}" filter-color="{{ .Params.tint | default .Site.Params.tint }}">
             <div class="page-header-image" data-parallax="true" style="background-image: url('{{ .Params.background | default .Site.Params.background | relURL }}');">
             </div>
@@ -15,6 +16,7 @@
             {{ end }}
             
         </div>
+        {{ end }}
         <div class="{{ .Params.section | default "section"}}">
             <div class="container">
               
