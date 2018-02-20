@@ -7,12 +7,12 @@
         <div class="container">
             <div class="navbar-translate">
                 <div class="navbar-brand">
-                <a href="{{ .Site.BaseURL | relURL }}" rel="tooltip" title="" data-placement="bottom" target="{{ .Site.Params.BrandTarget | default "_blank" }}">
+                <a class="" href="{{ .Site.BaseURL | relURL }}" rel="tooltip" title="" data-placement="bottom" target="{{ .Site.Params.BrandTarget | default "_blank" }}">
                     {{.Site.Title}}
                 </a>             
-                <a class="navbar-title" href="{{ .Site.BaseURL | relURL }}">
+                <a class="navbar-title">
                     : {{.Params.Title}}
-                </a>             
+                </a>
                 </div>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
