@@ -40,7 +40,7 @@
         </li>
         {{ else }}
         <li class="nav-item">
-          <a class="nav-link" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+          <a class="nav-link" href="{{ .URL | safeURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
             {{ .Pre }}
             <span>{{ .Name }}</span>
           </a>
